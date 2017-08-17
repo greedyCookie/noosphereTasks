@@ -1,0 +1,75 @@
+body {
+	/* background: #ddd;*/
+	font-family: "Comic Sans MS", cursive;
+	font-size: 24px;
+	background-color: #f0f0f0;
+}
+
+h1{
+	padding-bottom: 30px;
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 40px;
+	margin-top: 10px;
+	text-align: center;
+}
+.header_info_container {
+	margin: -15px 0;
+}
+#gaming_field {
+
+	min-height: 700px;
+	height: auto;
+	background: #fff;
+	/*  padding: 0; */
+	/* margin: 1%;  */
+    border-radius: 10px;
+	margin: 0 20px;
+}
+	#start_button {
+	margin-top: 6px;
+	margin-left: 20px;
+}
+#start_button_disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* #gaming_field .row {
+    height: 15%;
+    width: 100%;
+    margin: 3px;
+
+} */
+
+#gaming_field .col-xs-1{
+	padding:0 3px !important;
+
+}
+
+#gaming_field .test{
+	height: 110px;
+    margin-top: 3px;
+    margin-bottom: 3px;   
+    border-radius: 3px;
+    background-color: #fdfdfd;
+}
+
+#score_table {
+	height: 700px;
+	overflow:scroll;
+	overflow-x: hidden;
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+#score, #timer  {
+	width: 100px;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #fff;	 
+}

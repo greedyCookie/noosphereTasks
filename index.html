@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css" >	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	
+	<title>THE GAME</title>
+</head>
+<body>
+<!-- Modal Form -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Game over</h4>
+      </div>
+      <div class="modal-body">
+    	<div ><p id="score_count"></p></div>
+    	<div class="name">Name</div> <input type="text" id="player_name">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Don't save</button>
+        <button type="button" class="btn btn-primary" onclick="presenter.handlePlayerScorePrint()">
+        Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-9"><h1>The game of cubes</h1></div>
+	</div>
+	<div class="row">
+		<div class="col-md-1">
+			<button 
+				type="button" 
+				class="btn btn-primary btn-lg" 
+				id="start_button"
+				onclick="presenter.onClickStartGame()" 
+				>
+				START
+			</button>
+		</div>
+		<div class="col-md-2">
+			<button 
+				type="button" 
+				class="btn btn-default	 btn-lg" 
+				id="start_button"
+				onclick="presenter.onClickStartGame()" 
+				>
+				Start over
+			</button>
+		</div>
+		<div class="col-md-3">
+			<div class="row">
+				<div class="header_info_container">
+					<div class="col-md-5"> Points <br>
+					<input type="text" id="score" value="0" disabled="true"></div> 
+					<div class="col-md-4">Time left <br> 
+					<input type="text" id="timer" value="01:00" disabled="true"></div>
+				</div>
+			</div>			
+			
+		</div>
+		<div class="col-md-2"> <h2>Score table</h2></div>
+
+	</div>
+	<div class="row">
+		<div class="col-md-6" id="gaming_field">
+		</div>
+		<div class="col-md-2" id="score_table">
+			
+		</div>
+	</div>
+</div>
+<script src="test.js"></script>
+</body>
+</html>
