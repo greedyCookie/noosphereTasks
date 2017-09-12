@@ -200,9 +200,6 @@ let View = class {
 		container.className = 'col-md-9';
 		container.id = 'score_table_inside_wrap';
 		for(let i = 0; i< scoreSheet.length; i++){
-
-
-
 			this.printScoreRec(scoreSheet[i], container);
 			
 		}
